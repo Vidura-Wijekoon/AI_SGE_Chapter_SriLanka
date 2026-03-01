@@ -1,66 +1,207 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI Safety, Governance & Ethics Chapter - Sri Lanka</title>
+    <title>AI Safety, Governance & Ethics Chapter — Sri Lanka</title>
+    <meta name="description" content="Sri Lanka's dedicated community for AI Safety, Governance & Ethics. Shaping responsible AI for Sri Lanka's future.">
+    <meta name="keywords" content="AI Safety Sri Lanka, AI Governance Sri Lanka, AI Ethics Sri Lanka, AI SGE">
     <link rel="stylesheet" href="styles.css">
-    <meta name="description"
-        content="Securing Sri Lanka's Digital Future with the Wisdom of the Muragala. AI Safety, Governance, and Ethics.">
 </head>
-
 <body>
 
     <!-- Navigation -->
-    <nav class="navbar">
+    <nav class="navbar" id="navbar">
         <div class="logo">
             <img src="logo.png" alt="AI SGE Logo" class="logo-img">
             <span>AI SGE <span class="text-gradient">Sri Lanka</span></span>
         </div>
         <div class="nav-links">
             <a href="index.html" class="active">Home</a>
-            <a href="strategy.html">Why SGE</a>
-            <a href="about.html">Who We Are</a>
+            <a href="about.html">About</a>
+            <div class="dropdown">
+                <a href="focus-areas.html">Focus Areas ▾</a>
+                <div class="dropdown-menu">
+                    <a href="safety.html">🛡️ AI Safety</a>
+                    <a href="governance.html">⚖️ AI Governance</a>
+                    <a href="ethics.html">🧭 AI Ethics</a>
+                </div>
+            </div>
+            <a href="resources.html">Resources</a>
+            <a href="global-network.html">Global Network</a>
+            <a href="events.html">Events</a>
             <a href="contact.html">Contact</a>
         </div>
+        <button class="hamburger" id="hamburger" aria-label="Toggle mobile menu">
+            <span></span><span></span><span></span>
+        </button>
     </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="index.html" class="active">Home</a>
+        <a href="about.html">About</a>
+        <div class="mobile-section-label">Focus Areas</div>
+        <a href="focus-areas.html">Focus Areas Overview</a>
+        <a href="safety.html">🛡️ AI Safety</a>
+        <a href="governance.html">⚖️ AI Governance</a>
+        <a href="ethics.html">🧭 AI Ethics</a>
+        <a href="resources.html">Resources</a>
+        <a href="global-network.html">Global Network</a>
+        <a href="events.html">Events</a>
+        <a href="contact.html">Contact</a>
+    </div>
 
     <!-- Hero Section -->
     <header class="hero">
+        <div class="hero-bg"></div>
         <div class="container">
-            <div class="hero-content">
-                <h1>Securing Our <span class="text-gradient">Digital Future</span></h1>
-                <p>Establishing the "Digital Muragala" for Sri Lanka's AI Ecosystem. We protect the core while enabling
-                    innovation.</p>
-                <a href="strategy.html" class="btn btn-primary">Read the Strategy</a>
-                <a href="contact.html" class="btn btn-outline" style="margin-left: 10px;">Join the Chapter</a>
-            </div>
-            <div class="hero-image">
-                <img src="hero_shield.png" alt="Digital Muragala Shield">
+            <div class="hero-grid">
+                <div class="hero-content">
+                    <div class="hero-badge">🌏 Sri Lanka's First Chapter</div>
+                    <h1>Shaping <span class="text-gradient">Responsible AI</span><br>in Sri Lanka</h1>
+                    <p>A community dedicated to AI Safety, Governance & Ethics — building the foundation for a trustworthy AI future across Sri Lanka's technology, research, and policy landscape.</p>
+                    <div class="hero-ctas">
+                        <a href="contact.html" class="btn btn-gold">Join the Community</a>
+                        <a href="#mission" class="btn btn-outline">Learn More ↓</a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <img src="hero_shield.png" alt="AI Safety Shield — Digital Muragala">
+                    <div class="hero-stat-pills">
+                        <div class="stat-pill"><strong>77</strong> Global Chapters</div>
+                        <div class="stat-pill"><strong>10</strong> AP Partners</div>
+                        <div class="stat-pill"><strong>#1</strong> Sri Lanka</div>
+                    </div>
+                </div>
             </div>
         </div>
     </header>
 
-    <!-- Introduction / What We Are Doing -->
+    <!-- Mission Strip -->
+    <section class="mission-strip" id="mission">
+        <div class="container">
+            <span class="section-label">Our Mission</span>
+            <p class="mission-text">
+                The Sri Lanka AI SGE Chapter exists to promote <strong>AI Safety, Governance & Ethics</strong> across Sri Lanka's technology, research, and policy community. We build awareness, foster critical discourse, and connect local practitioners with a global movement of 77+ chapter communities working to ensure AI benefits humanity — now and into the future.
+            </p>
+        </div>
+    </section>
+
+    <!-- Stats Bar -->
+    <section class="stats-bar">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item reveal">
+                    <div class="stat-number text-gradient" data-target="77">0</div>
+                    <div class="stat-label">Global AI Safety Chapters</div>
+                </div>
+                <div class="stat-item reveal reveal-delay-1">
+                    <div class="stat-number text-gold" data-target="10">0</div>
+                    <div class="stat-label">Asia-Pacific Partners</div>
+                </div>
+                <div class="stat-item reveal reveal-delay-2">
+                    <div class="stat-number text-teal" data-target="1">0</div>
+                    <div class="stat-label">Sri Lanka Chapter</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Focus Area Preview -->
     <section class="section">
         <div class="container">
-            <h2 class="section-title">What We Are Doing</h2>
+            <div class="reveal">
+                <span class="section-label">What We Cover</span>
+                <h2 class="section-title">Our Three Pillars</h2>
+                <div class="divider"></div>
+                <p class="section-lead">Explore the three interconnected pillars that define our chapter's work — from existential risks to local policy relevance.</p>
+            </div>
+            <div class="card-grid" style="margin-top: 2.5rem;">
+                <a href="safety.html" class="focus-card safety reveal reveal-delay-1">
+                    <span class="icon">🛡️</span>
+                    <h3>AI Safety</h3>
+                    <p>Understanding and mitigating risks from advanced AI systems — misalignment, unintended consequences, and autonomous systems.</p>
+                    <span class="arrow">Explore Safety →</span>
+                </a>
+                <a href="governance.html" class="focus-card governance reveal reveal-delay-2">
+                    <span class="icon">⚖️</span>
+                    <h3>AI Governance</h3>
+                    <p>Policy frameworks, responsible deployment, and regulatory approaches relevant to Sri Lanka's growing AI ecosystem.</p>
+                    <span class="arrow">Explore Governance →</span>
+                </a>
+                <a href="ethics.html" class="focus-card ethics reveal reveal-delay-3">
+                    <span class="icon">🧭</span>
+                    <h3>AI Ethics</h3>
+                    <p>Fairness, transparency, explainability, and the societal impact of AI — with a focus on locally relevant ethical considerations.</p>
+                    <span class="arrow">Explore Ethics →</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Sri Lanka Needs This -->
+    <section class="section bg-alt">
+        <div class="container">
+            <div class="reveal">
+                <span class="section-label">Local Context</span>
+                <h2 class="section-title">Why Sri Lanka, Why Now</h2>
+                <div class="divider"></div>
+            </div>
             <div class="card-grid">
-                <div class="glass-card">
-                    <h3>Implement Strategy 2028</h3>
-                    <p>Operationalizing the safety protocols defined in the National AI Strategy 2028, ensuring
-                        alignment with national priorities.</p>
+                <div class="glass-card reveal reveal-delay-1">
+                    <h3>🚀 Growing Tech Sector</h3>
+                    <p>Sri Lanka's IT and BPO industry is rapidly expanding, with AI adoption accelerating across finance, healthcare, and public services. The risks grow with the opportunities.</p>
                 </div>
-                <div class="glass-card">
-                    <h3>Sovereign AI Security</h3>
-                    <p>Building the "Bahirawa" pillar – a hard shell to protect our physical and digital infrastructure
-                        from adversarial threats.</p>
+                <div class="glass-card reveal reveal-delay-2">
+                    <h3>🏛️ Policy Gaps</h3>
+                    <p>National AI governance frameworks are nascent. Community-led advocacy plays a critical role in shaping responsible policy before harms manifest at scale.</p>
                 </div>
-                <div class="glass-card">
-                    <h3>Agile Governance</h3>
-                    <p>Establishing the "Nagaraja" pillar – the operating system/governance engine that facilitates safe
-                        AI adoption.</p>
+                <div class="glass-card reveal reveal-delay-3">
+                    <h3>🌐 Bridge Role</h3>
+                    <p>Positioned to connect South Asian and Global South AI safety communities, Sri Lanka can lead governance-first positioning in the Asia-Pacific region.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Global Movement Snippet -->
+    <section class="section">
+        <div class="container">
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center;" class="responsive-2col">
+                <div class="reveal">
+                    <span class="section-label">Global Context</span>
+                    <h2 class="section-title">Part of a Global Movement</h2>
+                    <div class="divider"></div>
+                    <p class="section-lead">We're one of 77+ AI safety communities spanning 6 continents — all working toward the same goal: ensuring AI benefits humanity.</p>
+                    <a href="global-network.html" class="btn btn-outline" style="margin-top: 2rem;">View the Global Network →</a>
+                </div>
+                <div class="reveal reveal-delay-2">
+                    <div class="glass-card" style="text-align: center; padding: 3rem;">
+                        <div style="font-size: 4rem; margin-bottom: 1rem;">🌍</div>
+                        <div style="display: flex; flex-direction: column; gap: 0.75rem;">
+                            <div class="region-badge hl" style="justify-content: center;">🌏 Asia-Pacific — 10 Partners</div>
+                            <div class="region-badge" style="justify-content: center;">🌍 Africa — 12 Chapters</div>
+                            <div class="region-badge" style="justify-content: center;">🌎 Latin America — 8 Chapters</div>
+                            <div class="region-badge" style="justify-content: center;">🇪🇺 Europe — 25+ Chapters</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Banner -->
+    <section class="section-sm">
+        <div class="container">
+            <div class="cta-banner reveal">
+                <div>
+                    <h2>Ready to help shape <span class="text-gold">Sri Lanka's AI future?</span></h2>
+                    <p>Whether you're a student, researcher, policymaker, or a curious citizen — there's a place for you in this community.</p>
+                </div>
+                <div style="display: flex; gap: 1rem; flex-wrap: wrap; flex-shrink: 0;">
+                    <a href="contact.html" class="btn btn-gold">Get Involved</a>
+                    <a href="mailto:chapter.aisge.sl@gmail.com" class="btn btn-outline">📧 Email Us</a>
                 </div>
             </div>
         </div>
@@ -69,18 +210,39 @@
     <!-- Footer -->
     <footer>
         <div class="container">
-            <img src="logo.png" alt="AI SGE Logo" class="footer-logo">
-            <h3>AI SGE Chapter Sri Lanka</h3>
-            <p>Integrated with the National Centre for AI (NCAI)</p>
-            <div class="newsletter-form">
-                <input type="email" placeholder="Enter your email for updates">
-                <button class="btn btn-primary">Subscribe</button>
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <img src="logo.png" alt="AI SGE Logo" class="footer-logo">
+                    <p>The Sri Lanka AI Safety, Governance & Ethics Chapter — promoting responsible AI across Sri Lanka's technology, research, and policy community.</p>
+                    <a href="mailto:chapter.aisge.sl@gmail.com" class="btn btn-outline" style="font-size: 0.85rem; padding: 0.55rem 1rem; margin-top: 0.5rem;">📧 chapter.aisge.sl@gmail.com</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Pages</h4>
+                    <ul>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="focus-areas.html">Focus Areas</a></li>
+                        <li><a href="resources.html">Resources</a></li>
+                        <li><a href="global-network.html">Global Network</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Focus Areas</h4>
+                    <ul>
+                        <li><a href="safety.html">🛡️ AI Safety</a></li>
+                        <li><a href="governance.html">⚖️ AI Governance</a></li>
+                        <li><a href="ethics.html">🧭 AI Ethics</a></li>
+                    </ul>
+                </div>
             </div>
-            <p style="margin-top: 2rem; font-size: 0.9rem; opacity: 0.6;">&copy; 2026 AI SGE Chapter Sri Lanka. All
-                rights reserved.</p>
+            <div class="footer-bottom">
+                <span>© 2026 AI SGE Chapter Sri Lanka. All rights reserved.</span>
+                <span>Contact: <a href="mailto:chapter.aisge.sl@gmail.com" style="color: var(--primary);">chapter.aisge.sl@gmail.com</a></span>
+            </div>
         </div>
     </footer>
 
+    <script src="main.js"></script>
 </body>
-
 </html>
