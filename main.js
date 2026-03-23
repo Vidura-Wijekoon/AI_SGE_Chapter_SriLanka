@@ -1,5 +1,5 @@
 // =====================================================
-// SHARED JAVASCRIPT — AI SGE Sri Lanka Website
+// SHARED JAVASCRIPT ; AI SGE Sri Lanka Website
 // =====================================================
 
 // --- Navbar scroll effect ---
@@ -91,7 +91,7 @@
             const interest= (document.getElementById('c-interest')?.value || 'General');
             const message = (document.getElementById('c-message')?.value || '').trim();
 
-            const subject = encodeURIComponent(`[AI SGE SL] ${interest} — Message from ${name}`);
+            const subject = encodeURIComponent(`[AI SGE SL] ${interest} ; Message from ${name}`);
             const body    = encodeURIComponent(`Name: ${name}\nEmail: ${email}\nInterest Area: ${interest}\n\n${message}`);
             window.location.href = `mailto:info@aisgechaptersrilanka.org?subject=${subject}&body=${body}`;
         });
@@ -105,7 +105,7 @@
             const email    = (document.getElementById('s-email')?.value || '').trim();
             const interest = (document.getElementById('s-interest')?.value || 'General');
 
-            const subject = encodeURIComponent(`[AI SGE SL] Subscription Request — ${name}`);
+            const subject = encodeURIComponent(`[AI SGE SL] Subscription Request ; ${name}`);
             const body    = encodeURIComponent(`New subscription request:\n\nName: ${name}\nEmail: ${email}\nInterest Area: ${interest}\n\nPlease add me to your mailing list.`);
             window.location.href = `mailto:info@aisgechaptersrilanka.org?subject=${subject}&body=${body}`;
         });
