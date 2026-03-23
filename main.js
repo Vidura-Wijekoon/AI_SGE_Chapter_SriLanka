@@ -93,7 +93,7 @@
 
             const subject = encodeURIComponent(`[AI SGE SL] ${interest} — Message from ${name}`);
             const body    = encodeURIComponent(`Name: ${name}\nEmail: ${email}\nInterest Area: ${interest}\n\n${message}`);
-            window.location.href = `mailto:chapter.aisge.sl@gmail.com?subject=${subject}&body=${body}`;
+            window.location.href = `mailto:info@aisgechaptersrilanka.org?subject=${subject}&body=${body}`;
         });
     }
 
@@ -107,7 +107,7 @@
 
             const subject = encodeURIComponent(`[AI SGE SL] Subscription Request — ${name}`);
             const body    = encodeURIComponent(`New subscription request:\n\nName: ${name}\nEmail: ${email}\nInterest Area: ${interest}\n\nPlease add me to your mailing list.`);
-            window.location.href = `mailto:chapter.aisge.sl@gmail.com?subject=${subject}&body=${body}`;
+            window.location.href = `mailto:info@aisgechaptersrilanka.org?subject=${subject}&body=${body}`;
         });
     }
 })();
