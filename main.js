@@ -121,3 +121,18 @@
         });
     }
 })();
+// --- Mobile bottom nav active state ---
+(function () {
+    const navItems = document.querySelectorAll('.mobile-bottom-nav .nav-item');
+    if (!navItems.length) return;
+
+    const currentPath = window.location.pathname.split('/').pop() || 'index.html';
+    navItems.forEach(item => {
+        const href = item.getAttribute('href');
+        if (href === currentPath) {
+            item.classList.add('active');
+        } else {
+            item.classList.remove('active');
+        }
+    });
+})();
