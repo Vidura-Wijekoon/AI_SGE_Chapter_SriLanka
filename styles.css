@@ -385,7 +385,7 @@ img {
     background: rgba(8, 14, 30, 0.98);
     backdrop-filter: blur(20px);
     z-index: 999;
-    padding: 2rem 1.5rem;
+    padding: 2rem 1.5rem 100px;
     flex-direction: column;
     gap: 0.5rem;
     border-top: var(--glass-border);
