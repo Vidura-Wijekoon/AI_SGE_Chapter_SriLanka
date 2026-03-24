@@ -1556,6 +1556,29 @@ footer {
         gap: 2rem;
     }
 
+    .footer-brand {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-brand p {
+        margin: 0.75rem auto 1.25rem;
+    }
+
+    .footer-brand div {
+        justify-content: center;
+    }
+
+    .footer-col {
+        text-align: center;
+    }
+
+    .footer-col ul {
+        align-items: center;
+    }
+
     .footer-bottom {
         flex-direction: column;
         text-align: center;
